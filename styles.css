@@ -12,7 +12,6 @@ p.name {
 p.projects {
   width: 50%;
   height: 50%;
-  position: relative;
 
   border-style: solid;
   border-width: 5px;
@@ -21,6 +20,8 @@ p.bio {
   width: 50%;
   height: 50%;
   position: relative;
+  top: 50%;
+  left: 50%;
   
   border-style: solid;
   border-width: 5px;
