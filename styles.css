@@ -3,3 +3,7 @@ p.name {
   border-style: solid;
   border-width: 10px solid green;
 }
+body {
+  background-attachment: scroll;  
+}
+
