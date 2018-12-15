@@ -1,4 +1,6 @@
 p {
+  padding: 20px;
+  border: 10px solid green;
   color:black;
-  background-color:blue;
+  background-color:#5555EE;
 }
