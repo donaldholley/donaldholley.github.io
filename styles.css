@@ -10,11 +10,16 @@ p.name {
   min-height: 25px;
 }
 p.projects {
-  
+  width: 50%;
+  height: 50%;
 }
 p.bio {
+  width: 50%;
+  height: 50%;
 }
 p.contact {
+  width: 100%;
+  height: 20%;
 }
 body {
   background-attachment: scroll;  
