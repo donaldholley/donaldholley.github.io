@@ -3,7 +3,7 @@ p.name {
   vertical-align: middle;
   
   border-style: solid;
-  border-width: 10px;
+  border-width: 5px;
   width: 100%;
   height: 10%;
   min-width: 50px;
@@ -18,7 +18,6 @@ p.projects {
   
   margin-top: -15%
   
-  float: left;
 }
 p.bio {
   width: 40%;
@@ -27,7 +26,8 @@ p.bio {
   border-style: solid;
   border-width: 5px;
   
-  float: right;
+  margin-top: -15%;
+  margin-left: 0%;
 }
 p.contact {
   width: 100%;
