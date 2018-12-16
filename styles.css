@@ -9,6 +9,10 @@ p.name {
   min-width: 50px;
   min-height: 25px;
 }
+p.bandp {
+  width: 100%;
+  hight: 70%;
+}
 p.projects {
   width: 50%;
   height: 100%;
