@@ -13,7 +13,7 @@ p.projects {
   width: 40%;
   height: 50%;
   position: absolute;
-  margin-top: 15%;
+  margin-bottom: 15%;
   
   background-color: #5555FF;
 
@@ -24,7 +24,7 @@ p.bio {
   width: 40%;
   height: 50%;
   position: absolute;
-  margin-top: 15%;
+  margin-bottom: 15%;
   margin-left: 50%;
   
   background-color: #EE55EE;
