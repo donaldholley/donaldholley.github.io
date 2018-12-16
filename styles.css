@@ -10,18 +10,19 @@ p.name {
   min-height: 25px;
 }
 p.projects {
-  width: 50%;
-  height: 100%;
+  width: 40%;
+  height: 50%;
 
   border-style: solid;
   border-width: 5px;
   
+  margin-top: -15%
+  
   float: left;
 }
 p.bio {
-  width: 50%;
-  height: 100%;
-  position: relative;
+  width: 40%;
+  height: 50%;
   
   border-style: solid;
   border-width: 5px;
