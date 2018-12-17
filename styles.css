@@ -16,8 +16,6 @@ p.projects {
   
   background-color: #5555FF;
 
-  border-style: solid;
-  border-width: 5px;
 }
 p.bio {
   width: 40%;
@@ -27,18 +25,12 @@ p.bio {
   margin-top: 15%;
   
   background-color: #EE55EE;
-  
-  border-style: solid;
-  border-width: 5px;
 }
 p.contact {
   width: 100%;
   height: 20%;
   position: absolute;
   margin-top: 70%;
-  
-  border-style: solid;
-  border-width: 5px;
 }
 body {
   background-attachment: scroll;
