@@ -10,13 +10,14 @@
 //  arr2[x].innerHTML = "HELLO";
 //}
 
-function move(box) {
-  document.write(box.style.left);
-}
+//function move(box) {
+//  document.write(box.style.left);
+//}
 
 var paragraphs = document.getElementsByTagName("p");
 for (i = 0; i < paragraphs.length; i++) {
   paragraphs[i].onmouseover = function() {
-    paragraphs[i].setInterval(move, 10);
+    //paragraphs[i].setInterval(move, 10);
+    console.log("!");
   }
 }
