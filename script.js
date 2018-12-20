@@ -10,7 +10,14 @@
 //  arr2[x].innerHTML = "HELLO";
 //}
 
-var n = document.getElementById("name");
-n.onmouseover = function() {
-  n.innerHTML = "HELLO";
+function move() {
+  pos+=1;
+  box.style.left=pos+"px";
+}
+
+var paragraphs = document.getElementsByTag("p");
+for (i = 0; i < paragraphs.length; i++) {
+  paragraphs[i].onmouseover = function() {
+    paragraphs[i].setInterval(move, 10);
+  }
 }
