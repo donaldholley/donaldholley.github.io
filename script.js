@@ -3,3 +3,9 @@ var arr = document.getElementsByTagName("p");
 for (var x = 0; x < arr.length; x++) {
   arr[x].innerHTML = "HELLO";
 }
+
+var arr2 = document.getElementsByTagName("title");
+
+for (var x = 0; x < arr2.length; x++) {
+  arr2[x].innerHTML = "HELLO";
+}
