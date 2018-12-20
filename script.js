@@ -10,9 +10,8 @@
 //  arr2[x].innerHTML = "HELLO";
 //}
 
-function move() {
-  pos+=1;
-  box.style.left=pos+"px";
+function move(box) {
+  document.write(box.style.left);
 }
 
 var paragraphs = document.getElementsByTag("p");
