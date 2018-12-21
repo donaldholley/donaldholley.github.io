@@ -8,6 +8,7 @@ p.name {
   
   animation-name: nameanim;
   animation-duration: 1s;
+  animation-iteration-count: infinite;
 }
 
 @keyframes nameanim {
