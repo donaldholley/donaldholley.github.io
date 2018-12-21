@@ -13,10 +13,8 @@ p.name {
 
 @keyframes nameanim {
   from {background-color: red;}
-  to {background-colr: green;}
+  to {background-color: green;}
 }
-
-
 
 
 p.projects {
