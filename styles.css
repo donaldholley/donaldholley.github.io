@@ -12,8 +12,9 @@ p.name {
 }
 
 @keyframes nameanim {
-  from {background-color: red;}
-  to {background-color: green;}
+  0% {background-color: red;}
+  50% {background-color: green;}
+  100% {background-color: red;}
 }
 
 
