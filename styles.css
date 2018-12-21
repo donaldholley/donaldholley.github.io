@@ -4,12 +4,21 @@ p.name {
   width: 60%;
   height: 10%;
   left: 20%;
-  
   background-color: #22DDFF;
-  
   box-shadow: 10px 10px #444444;
   
+  animation-name: nameanim;
+  animation-duration: 10s;
 }
+
+@keyframes nameanim {
+  from {background-color: red;}
+  to {background-colr: green;}
+}
+
+
+
+
 p.projects {
   width: 40%;
   height: 50%;
