@@ -7,7 +7,7 @@ p.name {
   box-shadow: 10px 10px #444444;
   
   animation-name: nameanim;
-  animation-duration: 10s;
+  animation-duration: 1s;
 }
 
 @keyframes nameanim {
