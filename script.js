@@ -17,7 +17,6 @@
 var paragraphs = document.getElementsByTagName("p");
 for (i = 0; i < paragraphs.length; i++) {
   paragraphs[i].onmouseover = function() {
-    //paragraphs[i].setInterval(move, 10);
     console.log("!");
   }
 }
