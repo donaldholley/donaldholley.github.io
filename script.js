@@ -23,6 +23,6 @@ for (i = 0; i < paragraphs.length; i++) {
 
 var n = document.getElementById("name");
 n.onmouseover = function() {
-  style.animationPlayState = "running";
+  n.style.animationPlayState = "running";
   console.log("*");
 }
