@@ -26,7 +26,7 @@ n.onmouseover = function() {
   n.style.animationPlayState = "running";
   console.log("*");
 }
-n.onmounseout = function {
+n.onmounseout = function() {
   n.style.animationPlayState = "paused";
   console.log("out");
 }
