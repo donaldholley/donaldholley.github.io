@@ -9,7 +9,7 @@ p.name {
   animation-name: nameanim;
   animation-duration: 1s;
   animation-iteration-count: infinite;
-  animation-play-state = paused;
+  animation-play-state: paused;
 }
 
 @keyframes nameanim {
