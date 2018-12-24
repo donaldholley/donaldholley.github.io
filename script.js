@@ -20,3 +20,8 @@ for (i = 0; i < paragraphs.length; i++) {
     console.log("!");
   }
 }
+
+var n = document.getElementById("name");
+n.onmouseover = function() {
+  innerHTML.animation-play-state = running;
+}
