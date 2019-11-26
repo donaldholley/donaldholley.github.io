@@ -14,19 +14,19 @@
 //  document.write(box.style.left);
 //}
 
-var paragraphs = document.getElementsByTagName("p");
-for (i = 0; i < paragraphs.length; i++) {
-  paragraphs[i].onmouseover = function() {
-    console.log("!");
-  }
-}
+// var paragraphs = document.getElementsByTagName("p");
+// for (i = 0; i < paragraphs.length; i++) {
+//   paragraphs[i].onmouseover = function() {
+//     console.log("!");
+//   }
+// }
 
-var n = document.getElementById("name");
-n.onmouseover = function() {
-  n.style.animationPlayState = "running";
-  console.log("*");
-}
-n.onmouseout = function() {
-  n.style.animationPlayState = "paused";
-  console.log("out");
-}
+// var n = document.getElementById("name");
+// n.onmouseover = function() {
+//   n.style.animationPlayState = "running";
+//   console.log("*");
+// }
+// n.onmouseout = function() {
+//   n.style.animationPlayState = "paused";
+//   console.log("out");
+// }

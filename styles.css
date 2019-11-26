@@ -1,19 +1,19 @@
-p.name {
-  text-align: center;
-  position: absolute;
-  width: 60%;
-  height: 10%;
-  left: 20%;
+p {
+  font-family: "Verdana";
+}
+
+.name {
+  height: 100px;
+  width: 80%;
   border-radius: 30px;
-  
+  padding: 20px;
   box-shadow: 10px 10px #444444;
-  
   animation-name: nameanim;
   animation-duration: 1s;
   animation-iteration-count: infinite;
   animation-play-state: paused;
+  overflow: hidden;
 }
-
 @keyframes nameanim {
   0% {background-color: red;}
   50% {background-color: green;}
@@ -21,41 +21,69 @@ p.name {
 }
 
 
-p.projects {
-  width: 40%;
-  height: 50%;
-  position: absolute;
-  top: 15%;
-  left: 5%;
+.projects {
+  height: 100px;
+  width: 80%;
   border-radius: 30px;
-  
-  background-color: #5555FF;
-  
+  background-color: rgb(93, 155, 180);
   box-shadow: 10px 10px #444444;
+  transition: .5s;
+  overflow: hidden;
 }
-p.bio {
-  width: 40%;
-  height: 50%;
-  position: absolute;
-  left: 55%;
-  top: 15%;
+.projects a {
+  padding: 30px;
+  font-size: 20px;
+}
+.title {
+  /* titles for all secions */
+  /* top right bot left for padding */
+  padding: 0px 0px 0px 20px;
+  font-size: 30px;
+}
+.projects:hover {
+  height: 400px;
+}
+
+
+
+
+
+.bio {
+  height: 100px;
+  width: 80%;
   border-radius: 30px;
-  
   background-color: #EE55EE;
-  
   box-shadow: 10px 10px #444444;
+  overflow: hidden;
+  transition: .5s;
 }
-p.contact {
-  width: 60%;
-  height: 20%;
-  position: absolute;
-  top: 70%;
-  left: 20%;
+
+.bio a{
+  padding: 30px;
+  font-size: 20px;
+}
+
+.bio:hover {
+  height: 300px;
+}
+
+
+.contact {
+  height: 100px;
+  width: 80%;
   border-radius: 30px;
-  
+  background-color: turquoise;
   box-shadow: 10px 10px #444444;
+  overflow: hidden;
+  transition: .5s;
 }
-body {
-  background-attachment: scroll;
+
+.contact a{
+  padding: 30px;
+  font-size: 20px;
+}
+
+.contact:hover {
+  height: 300px;
 }
 
