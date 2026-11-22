@@ -1,32 +1,40 @@
-//var arr = document.getElementsByTagName("p");
+(function () {
+  var root = document.documentElement; // theme + "js" class are set inline in <head>
 
-//for (var x = 0; x < arr.length; x++) {
-//  arr[x].innerHTML = "HELLO";
-//}
+  function store(value) {
+    try { localStorage.setItem("theme", value); } catch (e) { /* ignore */ }
+  }
 
-//var arr2 = document.getElementsByTagName("title");
+  // ---- Theme toggle ----
+  var toggle = document.querySelector(".theme-toggle");
+  if (toggle) {
+    toggle.addEventListener("click", function () {
+      var next = root.getAttribute("data-theme") === "dark" ? "light" : "dark";
+      root.setAttribute("data-theme", next);
+      store(next);
+    });
+  }
 
-//for (var x = 0; x < arr2.length; x++) {
-//  arr2[x].innerHTML = "HELLO";
-//}
+  // ---- Footer year ----
+  var year = document.getElementById("year");
+  if (year) year.textContent = new Date().getFullYear();
 
-//function move(box) {
-//  document.write(box.style.left);
-//}
-
-// var paragraphs = document.getElementsByTagName("p");
-// for (i = 0; i < paragraphs.length; i++) {
-//   paragraphs[i].onmouseover = function() {
-//     console.log("!");
-//   }
-// }
-
-// var n = document.getElementById("name");
-// n.onmouseover = function() {
-//   n.style.animationPlayState = "running";
-//   console.log("*");
-// }
-// n.onmouseout = function() {
-//   n.style.animationPlayState = "paused";
-//   console.log("out");
-// }
+  // ---- Reveal on scroll ----
+  var items = document.querySelectorAll(".reveal");
+  if (!("IntersectionObserver" in window)) {
+    items.forEach(function (el) { el.classList.add("visible"); });
+    return;
+  }
+  var observer = new IntersectionObserver(function (entries) {
+    entries.forEach(function (entry) {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("visible");
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.12, rootMargin: "0px 0px -40px 0px" });
+  items.forEach(function (el, i) {
+    el.style.transitionDelay = Math.min(i % 4, 3) * 60 + "ms";
+    observer.observe(el);
+  });
+})();
